@@ -1,0 +1,30 @@
+a {
+    text-decoration: none;
+}
+
+.member {
+    width: 1000px;
+    height: 60px;
+    border-radius: 10px;
+    border-width: 2px;
+    margin-bottom: 2px;
+    background-color: lightskyblue;
+    color: black;
+    border-color: black;
+    border-style: solid;
+}
+.member:hover {
+    background-color: aqua;
+}
+
+.membersElement {
+    padding: 5px;
+}
+
+.timeIn{
+    float: right;
+}
+
+.name{
+    float: left;
+}
