@@ -2,6 +2,9 @@
 const request = new XMLHttpRequest();
 let data;
 
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 let timeIn = new Date(1579370720199);
 console.log(((timeIn.getHours() - 1) % 12) + 1 + ':' + (timeIn.getMinutes() < 10 ? '0' : '') + timeIn.getMinutes());
 
@@ -13,6 +16,10 @@ request.onload = function () {
     data = JSON.parse(request.response);
 };
 
+ReactDOM.render (
+    <h1>Hello, world!</h1>,
+    document.getElementById('root')
+);
 
 // Send request
 request.send();
